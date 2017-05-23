@@ -65,7 +65,12 @@
     <Compile Include="battleshipContext.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="GameBoard.xaml.cs">
+      <DependentUpon>GameBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Invite.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Move.cs" />
     <Compile Include="newGameDialog.xaml.cs">
       <DependentUpon>newGameDialog.xaml</DependentUpon>
     </Compile>
@@ -75,6 +80,10 @@
     </Compile>
     <Compile Include="Tile.cs" />
     <Compile Include="User.cs" />
+    <Page Include="GameBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

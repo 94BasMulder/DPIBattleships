@@ -6,16 +6,24 @@ using System.Threading.Tasks;
 
 namespace Battleships
 {
+    [Serializable]
     public class User
     {
+        public User() { }
+
         public User(string userName, string password)
         {
-            this.userName = userName;
-            this.password = password;
+            this.UserName = userName;
+            this.Password = password;
         }
 
-        public int id { get; set; }
-        public string userName { get; set; }
-        public string password { get; set; }
+        public int Id { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+
+        public override string ToString()
+        {
+            return UserName;
+        }
     }
 }

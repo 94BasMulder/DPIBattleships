@@ -9,7 +9,7 @@
     <Grid>
         <TextBox Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="192,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Naam" HorizontalAlignment="Left" Margin="192,27,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
-        <Label Content="" Name="lblMessage" HorizontalAlignment="Left" Margin="192,240,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <Label Content="" Name="lblMessage" HorizontalAlignment="Left" Margin="150,239,0,0" VerticalAlignment="Top" Height="26" Width="200"/>
         <Label Content="Wachtwoord" HorizontalAlignment="Left" Margin="192,100,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
         <Button Content="Login" HorizontalAlignment="Left" Name="btnLogin" Margin="192,180,0,0" VerticalAlignment="Top" Width="120" Click="btnLogin_Click"/>
         <Button Content="Registreer" Name="btnRegister" HorizontalAlignment="Left" Margin="192,214,0,0" VerticalAlignment="Top" Width="120" Click="btnRegister_Click"/>

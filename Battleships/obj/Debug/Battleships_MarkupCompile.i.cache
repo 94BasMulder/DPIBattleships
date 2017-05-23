@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\sammu\documents\visual studio 2017\Projects\Battleships\Battleships\obj\Debug\
+C:\Users\sammu\Documents\Visual Studio 2017\Projects\Battleships\DPIBattleships\Battleships\obj\Debug\
 Battleships
 none
 false
 DEBUG;TRACE
-C:\Users\sammu\documents\visual studio 2017\Projects\Battleships\Battleships\App.xaml
-3-558336310
+C:\Users\sammu\Documents\Visual Studio 2017\Projects\Battleships\DPIBattleships\Battleships\App.xaml
+42116189531
 
-18-980711227
-17701129818
-MainWindow.xaml;newGameDialog.xaml;RoomSelector.xaml;
+21-206614078
+171562169453
+GameBoard.xaml;MainWindow.xaml;newGameDialog.xaml;RoomSelector.xaml;
 
 False
 

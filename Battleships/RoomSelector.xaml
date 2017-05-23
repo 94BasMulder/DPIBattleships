@@ -8,10 +8,10 @@
         Title="RoomSelector" Height="300" Width="250">
     <Grid>
         <Button Name="btnInvite" Content="New game" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="220" Click="btnInvite_Click"/>
-        <ListView Name="lvGames" HorizontalAlignment="Left" Height="221" Margin="10,10,0,0" VerticalAlignment="Top" Width="221" SelectionChanged="ListView_SelectionChanged">
+        <ListView Name="lvGames" HorizontalAlignment="Left" Height="221" Margin="10,10,0,0" VerticalAlignment="Top" Width="221" MouseDoubleClick="lvGames_MouseDoubleClick">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="220" DisplayMemberBinding="{Binding Name}">
+                    <GridViewColumn Width="220" DisplayMemberBinding="{Binding Id}">
                         <GridViewColumn.Header>
                             <GridViewColumnHeader Tag="Name">Name</GridViewColumnHeader>
                         </GridViewColumn.Header>

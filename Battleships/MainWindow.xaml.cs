@@ -30,10 +30,9 @@ namespace Battleships
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             battleshipContext context = new battleshipContext();
-            if (context.Users.Any(t => t.userName == txtUsername.Text && t.password == txtPassword.Password))
+            if (context.Users.Any(t => t.UserName == txtUsername.Text && t.Password == txtPassword.Password))
             {
-                RoomSelector rs = new RoomSelector();
-                rs.user = context.Users.Where(t => t.userName == txtUsername.Text && t.password == txtPassword.Password).FirstOrDefault();
+                RoomSelector rs = new RoomSelector(context.Users.Where(t => t.UserName == txtUsername.Text && t.Password == txtPassword.Password).FirstOrDefault());
                 rs.Show();
                 this.Close();
             }

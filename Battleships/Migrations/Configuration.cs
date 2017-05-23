@@ -10,6 +10,7 @@ namespace Battleships.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(Battleships.battleshipContext context)
