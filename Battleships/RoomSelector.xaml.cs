@@ -94,7 +94,7 @@ namespace Battleships
 
         private void lvGames_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            GameBoard gameboard = new GameBoard((Game)lvGames.SelectedValue);
+            GameBoard gameboard = new GameBoard((Game)lvGames.SelectedValue,this.User);
             gameboard.Show();
         }
     }

@@ -10,5 +10,8 @@ namespace Battleships
     {
         public int id { get; set; }
         public string pieceType { get; set; }
+
+        public Piece() { }
+        public Piece(string pieceType) { this.pieceType = pieceType; }
     }
 }

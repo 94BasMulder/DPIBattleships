@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,14 +21,18 @@ namespace Battleships
     /// </summary>
     public partial class GameBoard : Window
     {
-        private Game game { get; set; }
+        private Game Game { get; set; }
+        private Board Board { get; set; }
+        private User user { get; set; }
 
-        public GameBoard(Game game)
+        public GameBoard(Game game,User user) 
         {
             battleshipContext context = new battleshipContext();
             InitializeComponent();
             this.Title = game.Id.ToString();
-            this.game = context.Games.Where(t => t.Id == game.Id).First();
+            this.user = user;
+            this.Game = context.Games.Where(t => t.Id == game.Id).First();
+            this.Board = context.Games.Where(t => t.Id == game.Id).First().Board;
             //generateField();
         }
 
@@ -52,5 +57,20 @@ namespace Battleships
                 }
             }
         }
+
+        private void btnClickEnemy(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnClickYou(object sender, RoutedEventArgs e)
+        {
+            battleshipContext context = new battleshipContext();
+            Piece p = new Piece();
+            context.Pieces.Add(p);
+            Button button = (Button)sender;
+            List<Tile> tiles = context.Tiles.Where(t => t.IsHit == false && t.x == button.Name[6] && t.y == button.Name[4] && t.Owner.Id == this.user.Id).ToList();
+        }
+        
     }
 }
