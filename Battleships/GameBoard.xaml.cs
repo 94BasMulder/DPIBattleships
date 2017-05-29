@@ -69,7 +69,7 @@ namespace Battleships
             Piece p = new Piece();
             context.Pieces.Add(p);
             Button button = (Button)sender;
-            List<Tile> tiles = context.Tiles.Where(t => t.IsHit == false && t.x == button.Name[6] && t.y == button.Name[4] && t.Owner.Id == this.user.Id).ToList();
+            //List<Tile> tiles = context.Tiles.Where(t => t.IsHit == false && t.x == button.Name[6] && t.y == button.Name[4] && t.Owner.Id == this.user.Id).ToList();
         }
         
     }

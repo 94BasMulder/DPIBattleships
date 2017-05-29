@@ -45,7 +45,7 @@
         </GroupBox>
         <GroupBox Header="You" HorizontalAlignment="Left" Height="320" Margin="0,330,0,0" VerticalAlignment="Top" Width="320">
             <Grid>
-                <Button Name="btnY1_1" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
+                <Button Name="btnY1_1" HorizontalAlignment="Left" Margin="0,0,0,248" VerticalAlignment="Bottom" Width="50" Height="50" Click="btnClickYou"/>
                 <Button Name="btnY1_2" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
                 <Button Name="btnY1_3" HorizontalAlignment="Left" Margin="120,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
                 <Button Name="btnY1_4" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
@@ -77,7 +77,7 @@
                 <Button Name="btnY5_3" HorizontalAlignment="Left" Margin="120,240,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
                 <Button Name="btnY5_4" HorizontalAlignment="Left" Margin="180,240,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
                 <Button Name="btnY5_5" HorizontalAlignment="Left" Margin="240,240,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
-                
+
             </Grid>
         </GroupBox>
     </Grid>
