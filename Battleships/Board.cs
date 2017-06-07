@@ -31,8 +31,8 @@ namespace Battleships
             user2 = context.Users.Where(r => r.Id == u2.Id).First();
 
             Tile t = null;
-            for (int i = 0; i < Size; i++)
-                for (int j = 0; j < Size; j++)
+            for (int i = 1; i <= Size; i++)
+                for (int j = 1; j <= Size; j++)
                 {
                     t = new Tile(user1,i,j);
                     this.Tiles.Add(t);
@@ -45,6 +45,9 @@ namespace Battleships
 
                     context.SaveChanges();
                }
+            context.Boards.Where(board => board.Id == this.Id).First().Tiles = this.Tiles;
+            context.SaveChanges();
+
         }
 
         public int Id { get; set; }

@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="GameBoard" Height="680" Width="320">
     <Grid Name="gameGrid">
-        <GroupBox Header="Enemy" HorizontalAlignment="Left" Height="320" Margin="0,0,0,0" VerticalAlignment="Top" Width="320" >
-            <Grid>
+        <GroupBox Name="gbEnemy" Header="Enemy" HorizontalAlignment="Left" Height="320" Margin="0,0,0,0" VerticalAlignment="Top" Width="320" >
+            <Grid Name="gEnemy">
                 <Button Name="btnE1_1" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickEnemy"/>
                 <Button Name="btnE1_2" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickEnemy"/>
                 <Button Name="btnE1_3" HorizontalAlignment="Left" Margin="120,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickEnemy"/>
@@ -43,8 +43,8 @@
                 <Button Name="btnE5_5" HorizontalAlignment="Left" Margin="240,240,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickEnemy"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="You" HorizontalAlignment="Left" Height="320" Margin="0,330,0,0" VerticalAlignment="Top" Width="320">
-            <Grid>
+        <GroupBox Name="gbYou"  Header="You" HorizontalAlignment="Left" Height="320" Margin="0,330,0,0" VerticalAlignment="Top" Width="320">
+            <Grid Name="gYou">
                 <Button Name="btnY1_1" HorizontalAlignment="Left" Margin="0,0,0,248" VerticalAlignment="Bottom" Width="50" Height="50" Click="btnClickYou"/>
                 <Button Name="btnY1_2" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>
                 <Button Name="btnY1_3" HorizontalAlignment="Left" Margin="120,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="btnClickYou"/>

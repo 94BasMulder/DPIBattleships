@@ -75,7 +75,9 @@ namespace Battleships
             context.Games.Add(new Game(user1,user2, b));
             context.SaveChanges();
 
-            context.Boards.Where(t => t.Id == b.Id).First().generateTiles(user1, user2);
+            b = context.Boards.Where(t => t.Id == b.Id).First();
+            b.generateTiles(user1, user2);
+            
             loadListBox();
 
         }
