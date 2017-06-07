@@ -68,10 +68,11 @@ namespace Battleships
                         t.IsHit = true;
                         if (t.Piece != null)
                         {
+                            MessageBox.Show("U bent geraakt.");
                             if (currentUser == Game.User1.Id)
                             {
                                 context.Boards.Find(Game.Board.Id).HitsUser1 += 1;
-                                if (context.Boards.Find(Game.Board.Id).HitsUser1 == 7) { sendMSMQ(new Response(true, false)); MessageBox.Show("U heeft verloren!");this.Close();  }
+                                if (context.Boards.Find(Game.Board.Id).HitsUser1 == 7) { sendMSMQ(new Response(true, false)); MessageBox.Show("U heeft verloren!"); this.Close(); }
                                 else sendMSMQ(new Response(true));
                             }
                             else
@@ -80,9 +81,13 @@ namespace Battleships
                                 if (context.Boards.Find(Game.Board.Id).HitsUser2 == 7) { sendMSMQ(new Response(true, false)); MessageBox.Show("U heeft verloren!"); this.Close(); }
                                 else sendMSMQ(new Response(true));
                             }
-                            
+
                         }
-                        else sendMSMQ(new Response(false));
+                        else
+                        {
+                            MessageBox.Show("U bent niet geraakt.");
+                            sendMSMQ(new Response(false));
+                        }
                         context.Games.Find(Game.Id).Turn = context.Users.Find(currentUser);
                         context.SaveChanges();
                     }
