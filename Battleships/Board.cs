@@ -18,6 +18,8 @@ namespace Battleships
             this.Size = size;
             setTilesUser1 = 7;
             setTilesUser2 = 7;
+            HitsUser1 = 0;
+            HitsUser2 = 0;
             this.Tiles = new List<Tile>();
         }
 
@@ -53,7 +55,9 @@ namespace Battleships
         public int Id { get; set; }
         public int setTilesUser1 { get; set; }
         public int setTilesUser2 { get; set; }
+        public int HitsUser1 { get; set; }
+        public int HitsUser2 { get; set; }
         public int Size { get; set; }
-        public List<Tile> Tiles { get; set; }
+        public virtual List<Tile> Tiles { get; set; }
     }
 }

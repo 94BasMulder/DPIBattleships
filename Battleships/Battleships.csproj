@@ -75,6 +75,7 @@
       <DependentUpon>newGameDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Piece.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="RoomSelector.xaml.cs">
       <DependentUpon>RoomSelector.xaml</DependentUpon>
     </Compile>

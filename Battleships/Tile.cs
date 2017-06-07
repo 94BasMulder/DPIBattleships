@@ -10,8 +10,8 @@ namespace Battleships
     {
         public int Id { get; set; }
         public bool IsHit { get; set; }
-        public Piece Piece {get;set;}
-        public User Owner { get; set; }
+        public virtual Piece Piece {get;set;}
+        public virtual User Owner { get; set; }
         public int x { get; set; }
         public int y { get; set; }
 

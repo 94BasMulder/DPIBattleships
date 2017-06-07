@@ -9,10 +9,10 @@ namespace Battleships
     public class Game
     {
         public int Id { get; set; }
-        public User Turn { get; set; }
-        public User User1 { get; set; }
-        public User User2 { get; set; }
-        public Board Board { get; set; }
+        public virtual User Turn { get; set; }
+        public virtual User User1 { get; set; }
+        public virtual User User2 { get; set; }
+        public virtual Board Board { get; set; }
 
         public Game() { }
 
